@@ -17,7 +17,7 @@ on:
 
 jobs:
   check-license:
-    runs-on: ubuntu-24.04-32
+    runs-on: tenki-standard-large-plus-16c-32g
 
     steps:
       - name: Checkout repository

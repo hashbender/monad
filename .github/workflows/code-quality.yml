@@ -11,7 +11,7 @@ concurrency:
 jobs:
   formatting-check:
     name: Check clang-format
-    runs-on: ubuntu-24.04
+    runs-on: tenki-standard-large-plus-16c-32g
     steps:
       - uses: actions/checkout@v4
 
@@ -23,7 +23,7 @@ jobs:
 
   traits-check:
       name: Trait instantiation check
-      runs-on: ubuntu-24.04
+      runs-on: tenki-standard-large-plus-16c-32g
       steps:
           - uses: actions/checkout@v4
             with:
@@ -40,7 +40,7 @@ jobs:
 
   clang-tidy:
     name: Check clang-tidy
-    runs-on: ubuntu-24.04-32
+    runs-on: tenki-standard-large-plus-16c-32g
     steps:
         - name: Generate token
           id: generate_token
